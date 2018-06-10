@@ -135,6 +135,10 @@ ex ()
 eval $(keychain --eval --quiet id_rsa ~/.ssh/id_rsa) 
 eval "$(thefuck --alias fuck)"
 
+# natural scrolling
+xinput set-prop 11 297 1
+
+
 export PATH=$PATH:/opt/cuda/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/opt/cuda
 export CUDA_HOME=/opt/cuda
