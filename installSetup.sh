@@ -16,6 +16,23 @@ sudo pacman -S thefuck keychain
 print "Installing terminal and file manager"
 sudo pacman -S gnome-terminal nautilus
 
-# maybe run ssh-keygen
+print "Installing aur package manager aurman"
+mkdir tmpInstallDir
+cd tmpInstallDir
+curl https://aur.archlinux.org/cgit/aur.git/snapshot/aurman.tar.gz --output aurman.tar.gz
+tar xzvf aurman.tar.gz
+cd aurman
+makepkg -Acs
+sudo pacman -U aurman-2.10-1-any.pkg.tar.xz
+cd ../..
+rm -rf tmpInstallDir
+
+
+# run ssh-keygen if key doesn't exist yet
+if [ ! -f ~/.ssh/id_rsa ]; then
+  print "Generating ssh key"
+  ssh-keygen -f ~/.ssh/id_rsa
+fi
+
 
 
