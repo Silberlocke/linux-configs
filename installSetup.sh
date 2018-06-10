@@ -34,5 +34,6 @@ if [ ! -f ~/.ssh/id_rsa ]; then
   ssh-keygen -f ~/.ssh/id_rsa
 fi
 
-
+print "Installing thunderbird"
+sudo pacman -S thunderbird
 
