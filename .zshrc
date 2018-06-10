@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/vogi/.oh-my-zsh
+export ZSH=/home/vogi/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 xhost +local:root > /dev/null 2>&1
 
 export JAVA_FONTS=/usr/share/fonts/TTF
-export EDITOR=/usr/bin/nano
+export EDITOR=/usr/bin/vim
 
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -99,12 +99,14 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
-alias update='yaourt -Syua'
+alias update='aurman -Syua'
 alias con='nano $HOME/.i3/config'
 alias comp='nano $HOME/.config/compton.conf'
 alias inst='sudo pacman -S'
 alias mirrors='sudo pacman-mirrors -g'
 alias printer='system-config-printer'
+alias vi=vim
+
 
 # ex - archive extractor
 # usage: ex <file>
