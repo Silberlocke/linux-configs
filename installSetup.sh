@@ -37,3 +37,5 @@ fi
 print "Installing thunderbird"
 sudo pacman -S thunderbird
 
+sudo pacman -S pycharm
+sudo pacman -S intellij-idea-community-edition

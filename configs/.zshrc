@@ -142,3 +142,9 @@ xinput set-prop 11 297 1
 export PATH=$PATH:/opt/cuda/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/opt/cuda
 export CUDA_HOME=/opt/cuda
+
+
+#Make alt_l key behave like ctrl (like on mac)
+xmodmap -e "clear mod1"
+xmodmap -e "add control = Alt_L"
+
