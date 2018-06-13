@@ -39,3 +39,5 @@ sudo pacman -S thunderbird
 
 sudo pacman -S pycharm
 sudo pacman -S intellij-idea-community-edition
+sudo pacman -S python-pip
+sudo pacman -S python-numpy python-scipy
